@@ -1,0 +1,213 @@
+/* style.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .l-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .w-image-h {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .w-image-h img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* or cover, as needed */
+  }
+  .highlight-blue{
+    font-weight: 900;
+    color:#003960
+  }
+  .l-section-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+  }
+  
+  .l-section-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 26, 26, 0.30);
+    z-index: 2;
+  }
+  .w-image-h img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* optional for cropping instead of stretching */
+  }
+  
+  .l-section-h {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+  }
+  h3{
+    font-size: 1.8rem;
+
+  }
+  
+  h1 {
+    font-size: 5rem;
+    margin: 0;
+    font-weight: 900;
+  }
+  .w-text-value{
+    font-size: 1.6rem;
+    font-weight: 750;
+  }
+  /* Counter Section */
+  .counter-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .counter-box {
+    flex: 1 1 300px;
+    margin: 20px;
+    max-width: 300px;
+  }
+
+  .w-counter-value {
+    font-size: 8rem;
+    font-weight: bold;
+    color: #f31010;
+    text-shadow:
+    -1px -1px 0 #f31010,  
+     1px -1px 0 #f31010,
+    -1px  1px 0 #f31010,
+     1px  1px 0 #f31010;
+  }
+
+  .w-counter-title {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  
+  .text-section {
+    padding: 80px 20px;
+    background: #f5f5f5;
+    text-align: center;
+  }
+  
+  .text-section h1 {
+    color: #333;
+    font-size: 4.5rem;
+    font-weight: 900; /* or 900 for max weight */
+
+    ;
+  }
+  .highlight-red {
+    color: #f31010; /* or any shade of red you like */
+    font-weight: 900;
+  }
+  
+  .image_transition_scroll {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .image_transition_scroll .w-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.6s ease;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+  
+  .image_transition_scroll .w-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .lodging-title{
+    font-weight: 900;
+  }
+  
+  .vc_column-inner {
+    position: relative;
+    height: 600px;
+  }
+  
+  @media (min-width: 768px) {
+    .g-cols.via_grid.cols_2 {
+      display: flex;
+      gap: 2rem;
+    }
+  
+    .wpb_column.vc_column_container {
+      flex: 1;
+    }
+  }
+  
+  /* Lodging Platform Section Styles */
+.lodging-section {
+    padding: 60px 20px;
+    background: #fff;
+    color: #333;
+  }
+  .lodging-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .lodging-text {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+  }
+  .lodging-image {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+  }
+  .lodging-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .metrics {
+    margin-top: 20px;
+  }
+  .metric {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+  }
+  
+  
