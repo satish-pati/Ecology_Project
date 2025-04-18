@@ -1,6 +1,12 @@
 /* style.css */
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body, html {
+  overflow-x: hidden;
+
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -16,6 +22,15 @@ body, html {
     justify-content: center;
     color: white;
   }
+  .image-row img,
+.lodging-image img,
+.w-image-h img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
   .image-row {
     display: flex;
     justify-content: space-between;
@@ -36,7 +51,21 @@ body, html {
     margin-top: 25px;
     font-weight: 800;
   }
+  main, section {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: auto;
+  }
+  .l-section {
+    height: auto;      /* allow hero to shrink on mobile */
+    padding: 60px 0;   /* add some vertical breathing room */
+  }
   
+  .wpb_column.vc_column_container[style] {
+    margin: 0 !important;
+  }
   
   
   .floating-islands-section p {
@@ -417,8 +446,23 @@ body, html {
   .mission-card { width: 100%; }
   .footer-main { flex-direction: column; gap: 1.5rem; }
 }
+
 @media (max-width: 480px) {
   /* General font size adjustments */
+  .mission-card,
+  .counter-box {
+    width: auto !important;
+    max-width: 100%;
+  }
+  /* ensure text wraps nicely */
+  h1, h2, h3, p {
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+  /* tighten up side‑padding on your subsections */
+  .subsections {
+    padding: 0 8px;
+  }
   body {
     font-size: 14px;
   }
@@ -516,4 +560,3 @@ body, html {
     width: 100%;
   }
 }
-
