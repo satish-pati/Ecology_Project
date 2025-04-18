@@ -63,11 +63,16 @@ body, html {
     margin: 0 !important;
   }
   
-  
+  .floating-islands-section {
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
   .floating-islands-section p {
     font-size: 1.1em;
     line-height: 1.6;
     color: #333;}
+  
   .image-row img {
     max-width: 45%; /* adjust as needed */
     height: auto;
@@ -559,5 +564,27 @@ body, html {
 
   .mission-card {
     width: 100%;
+  }
+  .floating-islands-section {
+    padding: 10px 16px;
+    margin: 0;
+  }
+
+  .floating-islands-section .image-row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .floating-islands-section .image-row img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* Also ensure subsections use full width */
+  .floating-islands-section .subsections {
+    padding: 0 16px;
   }
 }
