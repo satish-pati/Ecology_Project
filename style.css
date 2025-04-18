@@ -565,26 +565,31 @@ body, html {
   .mission-card {
     width: 100%;
   }
-  .floating-islands-section {
-    padding: 10px 16px;
-    margin: 0;
+  .lodging-section h1,
+  .floating-islands-section h1 {
+    white-space: normal !important;
+    word-break: break-word;
   }
 
+  /* make lodging-row children stack and fill width */
+  .lodging-row > *,
+  .lodging-row .image-row {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* force images to full width in their container */
+  .image-row img {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* ensure flex columns stack */
+  .lodging-row,
   .floating-islands-section .image-row {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .floating-islands-section .image-row img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  /* Also ensure subsections use full width */
-  .floating-islands-section .subsections {
-    padding: 0 16px;
+    flex-direction: column !important;
   }
 }
