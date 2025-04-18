@@ -417,9 +417,103 @@ body, html {
   .mission-card { width: 100%; }
   .footer-main { flex-direction: column; gap: 1.5rem; }
 }
-
 @media (max-width: 480px) {
-  h1 { font-size: 2.5rem; }
-  h3 { font-size: 1.2rem; }
-  .image-row img { max-width: 100%; }
+  /* General font size adjustments */
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    word-wrap: break-word;
+  }
+
+  h3 {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .subsections h3 {
+    font-size: 1.4rem;
+  }
+
+  .w-text-value {
+    font-size: 1.2rem;
+  }
+
+  .w-counter-value {
+    font-size: 3.5rem;
+  }
+
+  .w-counter-title {
+    font-size: 1rem;
+  }
+
+  .text-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .mission-card {
+    padding: 1rem 0.5rem;
+    min-height: auto;
+  }
+
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-section li {
+    font-size: 0.9rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.9rem;
+  }
+
+  .social-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .footer-bottom {
+    font-size: 0.75rem;
+  }
+
+  .image-row {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .image-row img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .counter-box {
+    max-width: 90%;
+  }
+
+  .lodging-text, .lodging-image {
+    padding: 10px;
+  }
+
+  .metric {
+    font-size: 0.9rem;
+  }
+
+  .mission-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mission-card {
+    width: 100%;
+  }
 }
+
