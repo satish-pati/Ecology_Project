@@ -403,4 +403,23 @@ body, html {
     padding: 8px 0;
   }
   
-  
+ 
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .mission-grid { gap: 40px; }
+  .mission-card { width: 45%; }
+}
+
+@media (max-width: 768px) {
+  .vc_column-inner { height: auto; padding: 20px 0; }
+  .lodging-row { flex-direction: column; }
+  .mission-grid { flex-direction: column; gap: 30px; }
+  .mission-card { width: 100%; }
+  .footer-main { flex-direction: column; gap: 1.5rem; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 2.5rem; }
+  h3 { font-size: 1.2rem; }
+  .image-row img { max-width: 100%; }
+}
