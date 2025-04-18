@@ -446,6 +446,17 @@ body, html {
   .mission-grid { flex-direction: column; gap: 30px; }
   .mission-card { width: 100%; }
   .footer-main { flex-direction: column; gap: 1.5rem; }
+  .image-row {
+    display: flex;
+    flex-wrap: nowrap;                /* don’t wrap on desktop */
+    justify-content: space-around;    /* spread them with equal margins */
+    gap: 20px;                        /* your existing gutter */
+  }
+  .image-row img {
+    flex: 1 1 calc(50% - 20px);       /* take up half the row minus the gap */
+    max-width: calc(50% - 20px);      /* explicitly cap each at half minus gutter */
+    height: auto;
+  }
   
 }
 
