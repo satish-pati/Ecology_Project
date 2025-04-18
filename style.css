@@ -58,11 +58,7 @@ body, html {
     padding-right: 16px;
     margin: auto;
   }
-  .l-section {
-    height: auto;      /* allow hero to shrink on mobile */
-    padding: 60px 0;   /* add some vertical breathing room */
-  }
-  
+ 
   .wpb_column.vc_column_container[style] {
     margin: 0 !important;
   }
@@ -445,6 +441,7 @@ body, html {
   .mission-grid { flex-direction: column; gap: 30px; }
   .mission-card { width: 100%; }
   .footer-main { flex-direction: column; gap: 1.5rem; }
+  
 }
 
 @media (max-width: 480px) {
@@ -453,6 +450,10 @@ body, html {
   .counter-box {
     width: auto !important;
     max-width: 100%;
+    .l-section {
+      height: auto;      /* let it grow with its content */
+      padding: 60px 0;   /* vertical breathing room */
+    }
   }
   /* ensure text wraps nicely */
   h1, h2, h3, p {
