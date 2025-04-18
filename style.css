@@ -439,6 +439,19 @@ body, html {
   .mission-grid { gap: 40px; }
   .mission-card { width: 45%; }
 }
+@media (min-width: 769px) {
+  .image-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 20px;               /* your gutter */
+  }
+  .image-row img {
+    flex: 0 0 calc(50% - 10px);   /* half minus half the gap */
+    max-width: calc(50% - 10px);
+    height: auto;
+  }
+}
 
 @media (max-width: 768px) {
   .vc_column-inner { height: auto; padding: 20px 0; }
@@ -448,13 +461,13 @@ body, html {
   .footer-main { flex-direction: column; gap: 1.5rem; }
   .image-row {
     display: flex;
-    flex-wrap: nowrap;                /* don’t wrap on desktop */
-    justify-content: space-around;    /* spread them with equal margins */
-    gap: 20px;                        /* your existing gutter */
+    flex-wrap: nowrap;                
+    justify-content: space-around;    
+    gap: 20px;                       
   }
   .image-row img {
-    flex: 1 1 calc(50% - 20px);       /* take up half the row minus the gap */
-    max-width: calc(50% - 20px);      /* explicitly cap each at half minus gutter */
+    flex: 1 1 calc(50% - 20px);       
+    max-width: calc(50% - 20px);     
     height: auto;
   }
   
